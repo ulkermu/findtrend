@@ -1,5 +1,5 @@
 .navbar {
-  margin: 0 80px;
+  padding: 0 5.56vw;
   height: 99px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,13 +19,16 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .navbar .navbar-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 40px;
   padding: 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -42,7 +45,7 @@
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
   border-radius: 40px;
-  color: #A8FF35;
+  color: #a8ff35;
 }
 
 .navbar .navbar-sign {
@@ -67,7 +70,7 @@
 .navbar .navbar-sign li:hover {
   -webkit-transition: all 150ms linear;
   transition: all 150ms linear;
-  color: #A8FF35;
+  color: #a8ff35;
 }
 
 .navbar .navbar-sign .navbar-sign-register {
@@ -79,6 +82,143 @@
 
 .navbar .navbar-sign .navbar-sign-register:hover {
   color: #000;
-  background-color: #A8FF35;
+  background-color: #a8ff35;
+}
+
+.navbar-mobil {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobil {
+    padding: 40px 5.56vw 0;
+    height: 99px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .navbar-mobil .navbar-mobil-logoSmall {
+    display: none;
+  }
+  .navbar-mobil .navbar-mobil-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+    padding-top: 15px;
+  }
+  .navbar-mobil .navbar-mobil-burger .line-top {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+            transform: rotate(-45deg) translate(-5px, 5px);
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+    height: 2px !important;
+  }
+  .navbar-mobil .navbar-mobil-burger .line-middle {
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+    opacity: 0;
+  }
+  .navbar-mobil .navbar-mobil-burger .line-bottom {
+    -webkit-transform: rotate(45deg) translate(-4px, -4px);
+            transform: rotate(45deg) translate(-4px, -4px);
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+    height: 2px !important;
+  }
+  .navbar-mobil .navbar-mobil-burger .navbar-mobil-burger-lines {
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+  }
+  .navbar-mobil-active {
+    height: 78.6vh !important;
+    background-color: #000;
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+  .navbar-mobil-active .navbar-mobil-pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+    padding: 150px 60px 0 0;
+  }
+  .navbar-mobil-active .navbar-mobil-pages li {
+    list-style-type: none;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .navbar-mobil-active .navbar-mobil-pages li:hover {
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
+    color: #a8ff35;
+  }
+  .navbar-mobil-active .navbar-mobil-pages .navbar-mobil-sign-register {
+    padding: 12px 32px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #000;
+  }
+  .navbar-mobil-active .navbar-mobil-pages .navbar-mobil-sign-register:hover {
+    color: #000;
+    background-color: #a8ff35;
+  }
+  .navbar-mobil-active .passive {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-mobil .navbar-mobil-logo {
+    display: none;
+  }
+  .navbar-mobil .navbar-mobil-logoSmall {
+    display: block;
+  }
+  .navbar-mobil-active .navbar-mobil-pages {
+    padding: 150px 0 0 0;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */

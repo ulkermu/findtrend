@@ -1,5 +1,5 @@
 .navbar {
-  margin: 0 80px;
+  padding: 0 5.56vw;
   height: 99px;
   display: flex;
   justify-content: space-between;
@@ -9,10 +9,11 @@
   line-height: 18px;
   img {
     height: fit-content;
+    width: fit-content;
   }
   .navbar-pages {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     padding: 0;
     align-items: flex-start;
     li {
@@ -22,7 +23,7 @@
       &:hover {
         transition: all 150ms linear;
         border-radius: 40px;
-        color: #A8FF35;
+        color: #a8ff35;
       }
     }
   }
@@ -37,7 +38,7 @@
       cursor: pointer;
       &:hover {
         transition: all 150ms linear;
-        color: #A8FF35;
+        color: #a8ff35;
       }
     }
     .navbar-sign-register {
@@ -47,8 +48,114 @@
       color: #000;
       &:hover {
         color: #000;
-        background-color: #A8FF35;
+        background-color: #a8ff35;
       }
+    }
+  }
+}
+.navbar-mobil {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .navbar {
+    display: none;
+  }
+  .navbar-mobil {
+    padding: 40px 5.56vw 0;
+    height: 99px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 150ms linear;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    .navbar-mobil-logoSmall {
+      display: none;
+    }
+    .navbar-mobil-burger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      height: fit-content;
+      width: fit-content;
+      cursor: pointer;
+      padding-top: 15px;
+      .line-top {
+        transform: rotate(-45deg) translate(-5px, 5px);
+        transition: all 150ms linear;
+        height: 2px !important;
+      }
+      .line-middle {
+        transition: all 150ms linear;
+        opacity: 0;
+      }
+      .line-bottom {
+        transform: rotate(45deg) translate(-4px, -4px);
+        transition: all 150ms linear;
+        height: 2px !important;
+      }
+      .navbar-mobil-burger-lines {
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        transition: all 150ms linear;
+      }
+    }
+  }
+  .navbar-mobil-active {
+    height: 78.6vh !important;
+    background-color: #000;
+    transition: all 150ms linear;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .navbar-mobil-pages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      padding: 150px 60px 0 0;
+      li {
+        list-style-type: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          transition: all 150ms linear;
+          color: #a8ff35;
+        }
+      }
+      .navbar-mobil-sign-register {
+        padding: 12px 32px;
+        border-radius: 40px;
+        background-color: #fff;
+        color: #000;
+        &:hover {
+          color: #000;
+          background-color: #a8ff35;
+        }
+      }
+    }
+    .passive {
+        display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-mobil {
+    .navbar-mobil-logo {
+      display: none;
+    }
+    .navbar-mobil-logoSmall {
+      display: block;
+    }
+  }
+  .navbar-mobil-active {
+    .navbar-mobil-pages {
+      padding: 150px 0 0 0;
     }
   }
 }
