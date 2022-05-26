@@ -18,11 +18,11 @@
     li {
       list-style-type: none;
       color: #fff;
+      cursor: pointer;
       &:hover {
-        cursor: pointer;
         transition: all 150ms linear;
         border-radius: 40px;
-        color: #000;
+        color: #A8FF35;
       }
     }
   }
@@ -34,10 +34,10 @@
       color: #fff;
       display: flex;
       align-items: center;
+      cursor: pointer;
       &:hover {
-        cursor: pointer;
         transition: all 150ms linear;
-        color: #000;
+        color: #A8FF35;
       }
     }
     .navbar-sign-register {
@@ -46,8 +46,8 @@
       background-color: #fff;
       color: #000;
       &:hover {
-        color: #fff;
-        background-color: #000;
+        color: #000;
+        background-color: #A8FF35;
       }
     }
   }
