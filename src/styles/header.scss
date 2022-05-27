@@ -31,23 +31,27 @@
     .header-wrapper-getStarted {
       display: flex;
       justify-content: center;
-      a {
+      div {
         position: relative;
-        text-decoration: none;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 140%;
         text-align: center;
-        color: #000000;
-        div {
+        a {
           display: flex;
+          text-decoration: none;
           justify-content: center;
           align-items: center;
           border-radius: 40px;
           width: 180px;
           height: 57px;
+          color: #000000;
           background-color: #a8ff35;
+          &:hover {
+            background-color: #8cc83a;
+            transition: all 150ms linear;
+          }
         }
         img {
           position: absolute;
@@ -55,6 +59,64 @@
           top: -14px;
         }
       }
+    }
+  }
+  .header-socmed {
+    display: grid;
+    grid-template-columns: repeat(4, 340px);
+    position: relative;
+    margin-top: 95px;
+    gap: 5px;
+    .header-socmed-link {
+      width: 340px;
+      height: 63px;
+      background-color: #181818;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(8px 8px 4px #000);
+      //position: absolute;
+      img {
+        width: 31.74px;
+        height: 31.74px;
+      }
+    }
+    #header-socmed-link-1 {
+      transform: rotate(-4deg);
+      z-index: 4;
+    }
+    #header-socmed-link-2 {
+      transform: rotate(2deg);
+      z-index: 3;
+      left: 250px;
+      top: 52px;
+    }
+    #header-socmed-link-3 {
+      transform: rotate(-2deg);
+      z-index: 2;
+      right: 250px;
+    }
+    #header-socmed-link-4 {
+      transform: rotate(4deg);
+      z-index: 1;
+      right: 0;
+      top: 52px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .header {
+    .header-socmed {
+      grid-template-columns: repeat(2, 340px);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    .header-socmed {
+      grid-template-columns: repeat(1, 340px);
     }
   }
 }

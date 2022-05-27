@@ -50,21 +50,20 @@
           justify-content: center;
 }
 
-.header .header-wrapper .header-wrapper-getStarted a {
+.header .header-wrapper .header-wrapper-getStarted div {
   position: relative;
-  text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 140%;
   text-align: center;
-  color: #000000;
 }
 
-.header .header-wrapper .header-wrapper-getStarted a div {
+.header .header-wrapper .header-wrapper-getStarted div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -74,12 +73,94 @@
   border-radius: 40px;
   width: 180px;
   height: 57px;
+  color: #000000;
   background-color: #a8ff35;
 }
 
-.header .header-wrapper .header-wrapper-getStarted a img {
+.header .header-wrapper .header-wrapper-getStarted div a:hover {
+  background-color: #8cc83a;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+
+.header .header-wrapper .header-wrapper-getStarted div img {
   position: absolute;
   right: -119px;
   top: -14px;
+}
+
+.header .header-socmed {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (340px)[4];
+      grid-template-columns: repeat(4, 340px);
+  position: relative;
+  margin-top: 95px;
+  gap: 5px;
+}
+
+.header .header-socmed .header-socmed-link {
+  width: 340px;
+  height: 63px;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: drop-shadow(8px 8px 4px #000);
+          filter: drop-shadow(8px 8px 4px #000);
+}
+
+.header .header-socmed .header-socmed-link img {
+  width: 31.74px;
+  height: 31.74px;
+}
+
+.header .header-socmed #header-socmed-link-1 {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+  z-index: 4;
+}
+
+.header .header-socmed #header-socmed-link-2 {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  z-index: 3;
+  left: 250px;
+  top: 52px;
+}
+
+.header .header-socmed #header-socmed-link-3 {
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  z-index: 2;
+  right: 250px;
+}
+
+.header .header-socmed #header-socmed-link-4 {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  z-index: 1;
+  right: 0;
+  top: 52px;
+}
+
+@media (max-width: 1500px) {
+  .header .header-socmed {
+    -ms-grid-columns: (340px)[2];
+        grid-template-columns: repeat(2, 340px);
+  }
+}
+
+@media (max-width: 800px) {
+  .header .header-socmed {
+    -ms-grid-columns: (340px)[1];
+        grid-template-columns: repeat(1, 340px);
+  }
 }
 /*# sourceMappingURL=header.css.map */

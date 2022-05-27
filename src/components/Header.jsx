@@ -1,5 +1,9 @@
 import "../styles/header.css";
 import imgHero from "../img/imgHero.svg";
+import twitterLogo from "../img/socmed/twitter.svg"
+import pinterestLogo from "../img/socmed/pinterest.svg"
+import facebookLogo from "../img/socmed/facebook.svg"
+import elonballLogo from "../img/socmed/elonball.svg"
 
 const Header = () => {
   return (
@@ -12,17 +16,29 @@ const Header = () => {
           Findtrend let you gathers all of your favorite website into one place.
         </p>
         <div className="header-wrapper-getStarted">
-          <a href="#!">
-            <div>Get Started 🔥</div>
+          <div>
+            <a href="#!">Get Started 🔥</a>
             <img src={imgHero} alt="Start Here" />
-          </a>
+          </div>
         </div>
       </div>
       <div className="header-socmed">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="header-socmed-link-1" className="header-socmed-link">
+          <img src={twitterLogo} alt="Twitter Logo" />
+          <div>Cryptopunk - Search</div>
+        </div>
+        <div id="header-socmed-link-2" className="header-socmed-link">
+          <img src={pinterestLogo} alt="Pinterest Logo" />
+          <div>Popular Design - Search</div>
+        </div>
+        <div id="header-socmed-link-3" className="header-socmed-link">
+          <img src={facebookLogo} alt="Facebook Logo" />
+          <div>Product Design - Search</div>
+        </div>
+        <div id="header-socmed-link-4" className="header-socmed-link">
+          <img src={elonballLogo} alt="Elon Musk Logo" />
+          <div>Elon Musk - Search</div>
+        </div>
       </div>
     </div>
   );
