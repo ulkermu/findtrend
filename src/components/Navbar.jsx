@@ -39,7 +39,7 @@ const Navbar = () => {
           <img className="navbar-mobil-logo"src={logo} alt="Company Logo" />
           <img className="navbar-mobil-logoSmall" src={logoSmall} alt="Company Logo" />
         </a>
-        <ul className="navbar-mobil-pages passive">
+        <ul className="navbar-mobil-pages">
           <li>About</li>
           <li>How it work</li>
           <li>Pricing</li>

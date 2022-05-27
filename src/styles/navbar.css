@@ -13,6 +13,10 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
+  position: fixed;
+  width: -webkit-fill-available;
+  background-color: #000;
+  background-image: url(../img/bgHero.png);
 }
 
 .navbar img {
@@ -94,8 +98,8 @@
     display: none;
   }
   .navbar-mobil {
-    padding: 40px 5.56vw 0;
-    height: 99px;
+    padding: 28px 5.56vw 0;
+    height: 71px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,6 +111,10 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
+    position: fixed;
+    width: -webkit-fill-available;
+    background-color: #000;
+    background-image: url(../img/bgHero.png);
   }
   .navbar-mobil .navbar-mobil-logoSmall {
     display: none;
@@ -155,20 +163,21 @@
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
   }
+  .navbar-mobil .navbar-mobil-pages {
+    display: none;
+  }
   .navbar-mobil-active {
     height: 78.6vh !important;
     background-color: #000;
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
+    background-image: none;
   }
   .navbar-mobil-active .navbar-mobil-pages {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -206,7 +215,11 @@
     background-color: #a8ff35;
   }
   .navbar-mobil-active .passive {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 150ms linear;
+    transition: all 150ms linear;
   }
 }
 
