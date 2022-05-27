@@ -1,10 +1,8 @@
-import Navbar from "./Navbar";
 import "../styles/header.css";
 
 const Header = () => {
   return (
     <div className="header">
-      <Navbar />
       <div>
         <h2>Minimize your tabs.</h2>
         <h2>Find the trends.</h2>
