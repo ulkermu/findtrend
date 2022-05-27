@@ -175,6 +175,7 @@
     top: 0;
     left: 0;
     background-image: none;
+    z-index: 9999;
   }
   .navbar-mobil-active .navbar-mobil-pages {
     display: none;
