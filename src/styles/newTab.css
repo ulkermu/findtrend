@@ -1,4 +1,116 @@
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 112%;
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.8065px;
+  line-height: 28px;
+  text-align: center;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  padding: 0 17px;
+  margin: 24px 0 40px;
+  color: #8b8b8b;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+  p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+}
+
 .newTab {
   background-color: #a8ff35;
+  padding: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newTab .newTab-panel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px;
+  gap: 24px;
+}
+
+.newTab .newTab-panel-container .newTab-panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 60px 80px;
+}
+
+.newTab .newTab-panel-container .newTab-panel .newTab-panel-link {
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 340px;
+  height: 82px;
+  color: #ffffff;
+  position: relative;
+}
+
+.newTab .newTab-panel-container .newTab-panel .newTab-panel-link .newTab-panel-link-closeBtn-overlay {
+  position: absolute;
+  right: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(53.65%, #030303), to(rgba(3, 3, 3, 0.6)));
+  background: linear-gradient(270deg, #030303 53.65%, rgba(3, 3, 3, 0.6) 100%);
+  width: 85px;
+  height: 100%;
+}
+
+.newTab .newTab-panel-container .newTab-panel .newTab-panel-link .newTab-panel-link-closeBtn {
+  position: absolute;
+  right: 24px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.newTab .newTab-text {
+  font-family: "Effra";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000000;
+  max-width: 666px;
 }
 /*# sourceMappingURL=newTab.css.map */
