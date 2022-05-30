@@ -8,6 +8,14 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.8065px;
+  line-height: 28px;
+  text-align: center;
+}
+
 p {
   font-style: normal;
   font-weight: 400;
@@ -17,6 +25,17 @@ p {
   padding: 0 17px;
   margin: 24px 0 40px;
   color: #8b8b8b;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+  p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
 }
 
 .header {
