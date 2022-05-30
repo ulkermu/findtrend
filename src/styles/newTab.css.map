@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,gBAAgB,ECHV,OAAO;CDIhB",
+    "sources": [
+        "newTab.scss",
+        "colors.scss"
+    ],
+    "names": [],
+    "file": "newTab.css"
+}
