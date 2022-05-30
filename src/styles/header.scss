@@ -1,7 +1,9 @@
+@import "./colors";
+
 .header {
   padding-top: 99px;
   background-image: url(../img/bgHero.png);
-  color: #fff;
+  color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +27,7 @@
       text-align: center;
       padding: 0 17px;
       margin: 24px 0 40px;
-      color: #8b8b8b;
+      color: $gray;
     }
     .header-wrapper-getStarted {
       display: flex;
@@ -45,10 +47,10 @@
           border-radius: 40px;
           width: 180px;
           height: 57px;
-          color: #000000;
-          background-color: #a8ff35;
+          color: $black;
+          background-color: $primary;
           &:hover {
-            background-color: #8cc83a;
+            background-color: $primaryHover;
             transition: all 150ms linear;
           }
         }
@@ -70,12 +72,12 @@
     .header-socmed-link {
       width: 340px;
       height: 63px;
-      background-color: #181818;
+      background-color: $blackBg;
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-      filter: drop-shadow(8px 8px 4px #000);
+      filter: drop-shadow(8px 8px 4px $black);
       img {
         width: 31.74px;
         height: 31.74px;
