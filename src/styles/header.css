@@ -5,7 +5,6 @@ h1 {
   line-height: 112%;
   text-align: center;
   margin: 0;
-  text-align: center;
 }
 
 h4 {
@@ -136,11 +135,6 @@ p {
   position: absolute;
   -webkit-filter: drop-shadow(8px 8px 4px #000000);
           filter: drop-shadow(8px 8px 4px #000000);
-}
-
-.header .header-socmed .header-socmed-link img {
-  width: 31.74px;
-  height: 31.74px;
 }
 
 .header .header-socmed #header-socmed-link-1 {
