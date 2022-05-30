@@ -1,3 +1,5 @@
+@import "../styles/colors";
+
 .navbar {
   padding: 0 5.56vw;
   height: 99px;
@@ -9,8 +11,8 @@
   line-height: 18px;
   position: fixed;
   width: -webkit-fill-available;
-  background-color: #000;
-  background-image: url(../img/bgHero.png);
+  background: rgba($color: $black, $alpha: 0.9);
+  z-index: 9999;
   img {
     height: fit-content;
     width: fit-content;
@@ -22,12 +24,12 @@
     align-items: flex-start;
     li {
       list-style-type: none;
-      color: #fff;
+      color: $white;
       cursor: pointer;
       &:hover {
         transition: all 150ms linear;
         border-radius: 40px;
-        color: #a8ff35;
+        color: $primary;
       }
     }
   }
@@ -36,23 +38,23 @@
     gap: 40px;
     li {
       list-style-type: none;
-      color: #fff;
+      color: $white;
       display: flex;
       align-items: center;
       cursor: pointer;
       &:hover {
         transition: all 150ms linear;
-        color: #a8ff35;
+        color: $primary;
       }
     }
     .navbar-sign-register {
       padding: 12px 32px;
       border-radius: 40px;
-      background-color: #fff;
-      color: #000;
+      background-color: $white;
+      color: $black;
       &:hover {
-        color: #000;
-        background-color: #a8ff35;
+        color: $black;
+        background-color: $primary;
       }
     }
   }
@@ -76,8 +78,8 @@
     line-height: 18px;
     position: fixed;
     width: -webkit-fill-available;
-    background-color: #000;
-    background-image: url(../img/bgHero.png);
+    background: rgba($color: $black, $alpha: 0.9);
+    z-index: 9999;
     .navbar-mobil-logoSmall {
       display: none;
     }
@@ -106,7 +108,7 @@
       .navbar-mobil-burger-lines {
         width: 20px;
         height: 1px;
-        background-color: #fff;
+        background-color: $white;
         transition: all 150ms linear;
       }
     }
@@ -116,7 +118,7 @@
   }
   .navbar-mobil-active {
     height: 78.6vh !important;
-    background-color: #000;
+    background-color: $black;
     transition: all 150ms linear;
     position: fixed;
     top: 0;
@@ -131,23 +133,23 @@
       padding: 150px 60px 0 0;
       li {
         list-style-type: none;
-        color: #fff;
+        color: $white;
         display: flex;
         align-items: center;
         cursor: pointer;
         &:hover {
           transition: all 150ms linear;
-          color: #a8ff35;
+          color: $primary;
         }
       }
       .navbar-mobil-sign-register {
         padding: 12px 32px;
         border-radius: 40px;
-        background-color: #fff;
-        color: #000;
+        background-color: $white;
+        color: $black;
         &:hover {
-          color: #000;
-          background-color: #a8ff35;
+          color: $black;
+          background-color: $primary;
         }
       }
     }
