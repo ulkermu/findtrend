@@ -11,8 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 60px 40px;
     gap: 24px;
+    .newTab-panel-container-rightArrowMobil {
+      display: none;
+    }
+    .newTab-panel-container-leftArrowMobil {
+      display: none;
+    }
     .newTab-panel {
       background-color: $white;
       border-radius: 16px;
@@ -39,10 +45,10 @@
           height: 100%;
         }
         .newTab-panel-link-closeBtn {
-            position: absolute;
-            right: 24px;
-            cursor: pointer;
-            z-index: 20;
+          position: absolute;
+          right: 24px;
+          cursor: pointer;
+          z-index: 20;
         }
       }
     }
@@ -55,5 +61,61 @@
     line-height: 150%;
     color: $black;
     max-width: 666px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .newTab {
+    h1 {
+      padding-bottom: 32px;
+    }
+    .newTab-panel-container {
+      flex-direction: column-reverse;
+      position: relative;
+      .newTab-panel-container-rightArrow {
+        display: none;
+      }
+      .newTab-panel-container-leftArrow {
+        display: none;
+      }
+      .newTab-panel-container-rightArrowMobil {
+        display: block;
+        position: absolute;
+        width: 93.46px;
+        height: 64.83px;
+        bottom: 10px;
+        align-self: flex-start;
+        z-index: 10;
+      }
+      .newTab-panel-container-leftArrowMobil {
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        top: 10px;
+        width: 99px;
+        height: 67.41px;
+        z-index: 10;
+      }
+      .newTab-panel {
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 315px;
+        height: 107.93px;
+        padding: 0;
+        .newTab-panel-link {
+          padding-left: 0px;
+          gap: 13px;
+          width: 291px;
+          height: 69.93px;
+          .newTab-panel-link-logo {
+            width: 27px;
+            height: 27px;
+            padding-left: 34px;
+          }
+        }
+      }
+    }
   }
 }

@@ -13,6 +13,8 @@ h2 {
   font-size: 64px;
   line-height: 76px;
   color: #000000;
+  padding: 0 40px;
+  margin: 0;
 }
 
 h4 {
@@ -21,6 +23,7 @@ h4 {
   font-size: 23.8065px;
   line-height: 28px;
   text-align: center;
+  margin: 0;
 }
 
 p {
@@ -34,14 +37,26 @@ p {
   color: #8b8b8b;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   h1 {
     font-size: 36px;
     padding: 0 20px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  h4 {
+    font-size: 20.3023px;
+    line-height: 24px;
   }
   p {
     font-size: 14px;
     padding: 0 20px;
+    margin: 0;
   }
 }
 
@@ -70,8 +85,16 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 60px;
+  padding: 60px 40px;
   gap: 24px;
+}
+
+.newTab .newTab-panel-container .newTab-panel-container-rightArrowMobil {
+  display: none;
+}
+
+.newTab .newTab-panel-container .newTab-panel-container-leftArrowMobil {
+  display: none;
 }
 
 .newTab .newTab-panel-container .newTab-panel {
@@ -120,5 +143,72 @@ p {
   line-height: 150%;
   color: #000000;
   max-width: 666px;
+}
+
+@media (max-width: 1000px) {
+  .newTab h1 {
+    padding-bottom: 32px;
+  }
+  .newTab .newTab-panel-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+  }
+  .newTab .newTab-panel-container .newTab-panel-container-rightArrow {
+    display: none;
+  }
+  .newTab .newTab-panel-container .newTab-panel-container-leftArrow {
+    display: none;
+  }
+  .newTab .newTab-panel-container .newTab-panel-container-rightArrowMobil {
+    display: block;
+    position: absolute;
+    width: 93.46px;
+    height: 64.83px;
+    bottom: 10px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    z-index: 10;
+  }
+  .newTab .newTab-panel-container .newTab-panel-container-leftArrowMobil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    position: absolute;
+    top: 10px;
+    width: 99px;
+    height: 67.41px;
+    z-index: 10;
+  }
+  .newTab .newTab-panel-container .newTab-panel {
+    border-radius: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 315px;
+    height: 107.93px;
+    padding: 0;
+  }
+  .newTab .newTab-panel-container .newTab-panel .newTab-panel-link {
+    padding-left: 0px;
+    gap: 13px;
+    width: 291px;
+    height: 69.93px;
+  }
+  .newTab .newTab-panel-container .newTab-panel .newTab-panel-link .newTab-panel-link-logo {
+    width: 27px;
+    height: 27px;
+    padding-left: 34px;
+  }
 }
 /*# sourceMappingURL=newTab.css.map */

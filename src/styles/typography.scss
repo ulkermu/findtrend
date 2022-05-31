@@ -39,7 +39,7 @@ p {
   color: $gray;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   h1 {
     font-size: 36px;
     padding: 0 20px;
@@ -50,6 +50,10 @@ p {
     line-height: 43px;
     padding: 0 20px;
     margin: 0;
+  }
+  h4 {
+    font-size: 20.3023px;
+    line-height: 24px;
   }
   p {
     font-size: 14px;
