@@ -9,6 +9,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  color: $black;
+  padding: 0 40px;
+}
+
 h4 {
   font-style: normal;
   font-weight: 400;
@@ -31,6 +40,11 @@ p {
 @media (max-width: 800px) {
   h1 {
     font-size: 36px;
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
     padding: 0 20px;
   }
   p {

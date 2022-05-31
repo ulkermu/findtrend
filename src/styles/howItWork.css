@@ -50,4 +50,27 @@ p {
     padding: 0 20px;
   }
 }
-/*# sourceMappingURL=typography.css.map */
+
+.howItWork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.howItWork .howItWork-text {
+  max-width: 1160px;
+}
+
+.howItWork .howItWork-text span {
+  color: #adadad;
+}
+/*# sourceMappingURL=howItWork.css.map */
