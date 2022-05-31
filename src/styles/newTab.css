@@ -155,6 +155,7 @@ p {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     position: relative;
+    padding: 60px 0;
   }
   .newTab .newTab-panel-container .newTab-panel-container-rightArrow {
     display: none;
