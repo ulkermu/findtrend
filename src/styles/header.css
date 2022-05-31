@@ -13,6 +13,8 @@ h2 {
   font-size: 64px;
   line-height: 76px;
   color: #000000;
+  padding: 0 40px;
+  margin: 0;
 }
 
 h4 {
@@ -21,6 +23,7 @@ h4 {
   font-size: 23.8065px;
   line-height: 28px;
   text-align: center;
+  margin: 0;
 }
 
 p {
@@ -38,10 +41,18 @@ p {
   h1 {
     font-size: 36px;
     padding: 0 20px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
+    padding: 0 20px;
+    margin: 0;
   }
   p {
     font-size: 14px;
     padding: 0 20px;
+    margin: 0;
   }
 }
 
@@ -64,6 +75,10 @@ p {
 .header .header-wrapper {
   padding-top: 99px;
   max-width: 700px;
+}
+
+.header .header-wrapper p {
+  padding: 24px 20px 40px;
 }
 
 .header .header-wrapper .header-wrapper-getStarted {
@@ -194,19 +209,16 @@ p {
   .header {
     padding-top: 56px;
   }
-  .header .header-wrapper h1 {
-    font-size: 36px;
-    padding: 0 20px;
-  }
   .header .header-wrapper p {
     font-size: 14px;
-    padding: 0 20px;
+    padding: 16px 20px 32px;
   }
   .header .header-socmed {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (300px)[1];
         grid-template-columns: repeat(1, 300px);
+    padding-bottom: 43px;
   }
 }
 /*# sourceMappingURL=header.css.map */

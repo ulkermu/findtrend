@@ -11,6 +11,9 @@
   .header-wrapper {
     padding-top: 99px;
     max-width: 700px;
+    p {
+      padding: 24px 20px 40px;
+    }
     .header-wrapper-getStarted {
       display: flex;
       justify-content: center;
@@ -105,18 +108,15 @@
   .header {
     padding-top: 56px;
     .header-wrapper {
-      h1 {
-        font-size: 36px;
-        padding: 0 20px;
-      }
       p {
         font-size: 14px;
-        padding: 0 20px;
+        padding: 16px 20px 32px;
       }
     }
     .header-socmed {
       display: grid;
       grid-template-columns: repeat(1, 300px);
+      padding-bottom: 43px;
     }
   }
 }
