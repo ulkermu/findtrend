@@ -16,6 +16,7 @@ h2 {
   line-height: 76px;
   color: $black;
   padding: 0 40px;
+  margin: 0;
 }
 
 h4 {
@@ -24,6 +25,7 @@ h4 {
   font-size: 23.8065px;
   line-height: 28px;
   text-align: center;
+  margin: 0;
 }
 
 p {
@@ -41,14 +43,17 @@ p {
   h1 {
     font-size: 36px;
     padding: 0 20px;
+    margin: 0;
   }
   h2 {
     font-size: 36px;
     line-height: 43px;
     padding: 0 20px;
+    margin: 0;
   }
   p {
     font-size: 14px;
     padding: 0 20px;
+    margin: 0;
   }
 }
