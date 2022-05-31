@@ -113,6 +113,13 @@
         font-size: 14px;
         padding: 16px 20px 32px;
       }
+      .header-wrapper-getStarted {
+        div {
+          img {
+            display: none;
+          }
+        }
+      }
     }
     .header-socmed {
       display: grid;

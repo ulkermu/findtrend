@@ -218,6 +218,9 @@ p {
     font-size: 14px;
     padding: 16px 20px 32px;
   }
+  .header .header-wrapper .header-wrapper-getStarted div img {
+    display: none;
+  }
   .header .header-socmed {
     display: -ms-grid;
     display: grid;
