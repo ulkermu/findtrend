@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import NewTab from "./components/NewTab";
 import HowItWork from "./components/HowItWork";
 import Partners from "./components/Partners";
+import AllConnect from "./components/AllConnect";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NewTab />
       <HowItWork />
       <Partners />
+      <AllConnect />
     </div>
   );
 }

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "soc": "socmed/FacebookLink.svg",
+        "socAlt": "Facebook Page"
+    },
+    {
+        "id": 2,
+        "soc": "socmed/TwitterLink.svg",
+        "socAlt": "Twitter Page"
+    },
+    {
+        "id": 3,
+        "soc": "socmed/MuskLink.svg",
+        "socAlt": "Musk Page"
+    },
+    {
+        "id": 4,
+        "soc": "socmed/PinterestLink.svg",
+        "socAlt": "Pinterest Page"
+    },
+    {
+        "id": 5,
+        "soc": "socmed/MediaLink.svg",
+        "socAlt": "Media Page"
+    },
+    {
+        "id": 6,
+        "soc": "socmed/HsLink.svg",
+        "socAlt": "HS Page"
+    },
+    {
+        "id": 7,
+        "soc": "socmed/VkLink.svg",
+        "socAlt": "VK Page"
+    },
+    {
+        "id": 8,
+        "soc": "socmed/LinkedinLink.svg",
+        "socAlt": "Linkedin Page"
+    }
+]
