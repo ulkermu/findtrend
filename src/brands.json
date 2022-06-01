@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "brand": "partners/microsoft.png",
+        "brandCaption": "Microsoft Logo"
+    },
+    {
+        "id": 2,
+        "brand": "partners/allianz.png",
+        "brandCaption": "Allianz Logo"
+    },
+    {
+        "id": 3,
+        "brand": "partners/upwork.png",
+        "brandCaption": "Upwork Logo"
+    },
+    {
+        "id": 4,
+        "brand": "partners/volvo.png",
+        "brandCaption": "Volvo Logo"
+    },
+    {
+        "id": 5,
+        "brand": "partners/grab.png",
+        "brandCaption": "Grab Logo"
+    },
+    {
+        "id": 6,
+        "brand": "partners/verizon.png",
+        "brandCaption": "Verizon Logo"
+    },
+    {
+        "id": 7,
+        "brand": "partners/coinbase.png",
+        "brandCaption": "Coinbase Logo"
+    },
+    {
+        "id": 8,
+        "brand": "partners/expedia.png",
+        "brandCaption": "Expedia Logo"
+    },
+    {
+        "id": 9,
+        "brand": "partners/airtable.png",
+        "brandCaption": "Airtable Logo"
+    },
+    {
+        "id": 10,
+        "brand": "partners/magento.png",
+        "brandCaption": "Magento Logo"
+    },
+    {
+        "id": 11,
+        "brand": "partners/carrera.png",
+        "brandCaption": "Carrera Logo"
+    },
+    {
+        "id": 12,
+        "brand": "partners/bonanza.png",
+        "brandCaption": "Bonanza Logo"
+    },
+    {
+        "id": 13,
+        "brand": "partners/wetransfer.png",
+        "brandCaption": "Wetranster Logo"
+    },
+    {
+        "id": 14,
+        "brand": "partners/suzuki.png",
+        "brandCaption": "Suzuki Logo"
+    },
+    {
+        "id": 15,
+        "brand": "partners/algolia.png",
+        "brandCaption": "Algolia Logo"
+    },
+    {
+        "id": 16,
+        "brand": "partners/heineken.png",
+        "brandCaption": "Heineken Logo"
+    }
+]

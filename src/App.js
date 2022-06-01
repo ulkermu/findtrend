@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import NewTab from "./components/NewTab";
 import HowItWork from "./components/HowItWork";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <NewTab />
       <HowItWork />
+      <Partners />
     </div>
   );
 }
