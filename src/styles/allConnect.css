@@ -1,0 +1,121 @@
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 112%;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  color: #000000;
+  padding: 0 40px;
+  margin: 0;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.8065px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  padding: 0 17px;
+  margin: 24px 0 40px;
+  color: #8b8b8b;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 36px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 43px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  h4 {
+    font-size: 20.3023px;
+    line-height: 24px;
+  }
+  p {
+    font-size: 14px;
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+
+.allConnect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+  padding: 140px 0;
+}
+
+.allConnect h2 {
+  text-align: center;
+  padding: 80px 0 77px;
+}
+
+.allConnect .allConnect-socmed-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 40px;
+}
+
+.allConnect .allConnect-socmed-wrapper .allConnect-socmed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.allConnect .allConnect-socmed-wrapper .allConnect-socmed .allConnect-socmed-links {
+  cursor: pointer;
+}
+
+.allConnect .allConnect-tweets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  padding-top: 77px;
+}
+
+.allConnect .allConnect-tweets .allConnect-tweet {
+  height: auto;
+}
+/*# sourceMappingURL=allConnect.css.map */

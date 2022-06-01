@@ -1,0 +1,36 @@
+@import "./colors";
+@import "./typography";
+
+.allConnect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $gray5;
+  padding: 140px 0;
+  h2 {
+    text-align: center;
+    padding: 80px 0 77px;
+  }
+  .allConnect-socmed-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 40px;
+    .allConnect-socmed {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      .allConnect-socmed-links {
+        cursor: pointer;
+      }
+    }
+  }
+  .allConnect-tweets {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 77px;
+    .allConnect-tweet {
+      height: auto;
+    }
+  }
+}
