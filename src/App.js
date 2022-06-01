@@ -4,6 +4,7 @@ import NewTab from "./components/NewTab";
 import HowItWork from "./components/HowItWork";
 import Partners from "./components/Partners";
 import AllConnect from "./components/AllConnect";
+import SwitchButton from "./components/Switch";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HowItWork />
       <Partners />
       <AllConnect />
+      <SwitchButton />
     </div>
   );
 }
