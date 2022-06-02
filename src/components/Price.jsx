@@ -13,6 +13,8 @@ const Price = () => {
         <div className="price-switch-monthly">Monthly</div>
         <Switch
           className="price-switch"
+          color="success"
+          size="medium"
           checked={toggled}
           onChange={(e) => setToggled(e.target.checked)}
         />

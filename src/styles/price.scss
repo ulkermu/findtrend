@@ -119,8 +119,10 @@
   .price {
     padding: 80px 18px;
     .price-card-wrapper {
-      display: flex;
       flex-direction: column;
+      img {
+        margin: 94px 0 0 157px;
+      }
     }
   }
 }
