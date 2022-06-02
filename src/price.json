@@ -1,0 +1,30 @@
+{
+    "month": [
+        {
+            "price": "$8",
+            "time": "/Month"
+        },
+        {
+            "price": "$20",
+            "time": "/Month"
+        },
+        {
+            "price": "$48",
+            "time": "/Month"
+        }
+    ],
+    "year": [
+        {
+            "price": "$86",
+            "time": "/Year"
+        },
+        {
+            "price": "$216",
+            "time": "/Year"
+        },
+        {
+            "price": "$518",
+            "time": "/Year"
+        }
+    ]
+}

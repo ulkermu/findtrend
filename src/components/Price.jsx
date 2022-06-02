@@ -3,9 +3,14 @@ import Switch from "@mui/material/Switch";
 import "../styles/price.css";
 import priceArrow from "../img/price/arrow.png";
 import tic from "../img/price/tic.png";
+import pricePerTime from "../price.json";
 
 const Price = () => {
   const [toggled, setToggled] = useState(false);
+  const switchToggle = (e) => {
+    setToggled(e.target.checked)
+  }
+
   return (
     <div className="price">
       <h2>Get your best deal</h2>
@@ -16,7 +21,7 @@ const Price = () => {
           color="success"
           size="medium"
           checked={toggled}
-          onChange={(e) => setToggled(e.target.checked)}
+          onChange={switchToggle}
         />
         <div className="price-switch-yearly">Yearly</div>
         <img src={priceArrow} alt="Best Deal Arrow" />
@@ -28,7 +33,7 @@ const Price = () => {
             <p>Special first packet for all</p>
             <div className="price-card-divider"></div>
             <span className="price-card-price">
-              $8 <span>/Month</span>
+              {toggled === false ? pricePerTime.month[0].price : pricePerTime.year[0].price} <span className="price-card-price-time">{toggled === false ? pricePerTime.month[0].time : pricePerTime.year[0].time}</span>
             </span>
             <div className="price-card-details">
               <div className="price-card-detail">
@@ -53,7 +58,7 @@ const Price = () => {
             <p>Recommended for personal pro</p>
             <div className="price-card-divider"></div>
             <span className="price-card-price">
-              $20 <span>/Month</span>
+            {toggled === false ? pricePerTime.month[1].price : pricePerTime.year[1].price}<span className="price-card-price-time">/{toggled === false ? pricePerTime.month[1].time : pricePerTime.year[1].time}</span>
             </span>
             <div className="price-card-details">
               <div className="price-card-detail">
@@ -82,7 +87,7 @@ const Price = () => {
             <p>Special first packet for all</p>
             <div className="price-card-divider"></div>
             <span className="price-card-price">
-              $48 <span>/Month</span>
+            {toggled === false ? pricePerTime.month[2].price : pricePerTime.year[2].price}<span className="price-card-price-time">{toggled === false ? pricePerTime.month[2].time : pricePerTime.year[2].time}</span>
             </span>
             <div className="price-card-details">
               <div className="price-card-detail">

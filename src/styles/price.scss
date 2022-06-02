@@ -59,7 +59,7 @@
           font-size: 60px;
           line-height: 100%;
           color: $black;
-          span {
+          .price-card-price-time {
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
@@ -83,7 +83,6 @@
         }
       }
       button {
-        //margin: 0 auto;
         background-color: $primary;
         cursor: pointer;
         border: none;
@@ -118,11 +117,14 @@
 @media (max-width: 1100px) {
   .price {
     padding: 80px 18px;
-    .price-card-wrapper {
-      flex-direction: column;
+    .price-switch-wrapper {
       img {
-        margin: 94px 0 0 157px;
+        margin: 88px 0 0 124px;
       }
+    }
+    .price-card-wrapper {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
