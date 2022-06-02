@@ -5,6 +5,7 @@ import HowItWork from "./components/HowItWork";
 import Partners from "./components/Partners";
 import AllConnect from "./components/AllConnect";
 import Price from "./components/Price";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Partners />
       <AllConnect />
       <Price />
+      <ContactUs />
     </div>
   );
 }
