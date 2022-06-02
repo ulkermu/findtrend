@@ -212,4 +212,10 @@ p {
     padding-left: 34px;
   }
 }
+
+@media (max-width: 800px) {
+  .newTab {
+    padding: 80px 0;
+  }
+}
 /*# sourceMappingURL=newTab.css.map */
