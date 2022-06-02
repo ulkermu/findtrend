@@ -63,20 +63,26 @@
   }
 }
 
+@media (max-width: 800px) {
+  .partners {
+    padding: 80px 0;
+  }
+}
+
 @media (max-width: 400px) {
-    .partners {
-        .partners-visual {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-          width: -webkit-fill-available;
-          padding: 0 20px;
-          .partners-visual-brand {
-            height: 74px;
-            img {
-              width: 75px;
-            }
-          }
+  .partners {
+    .partners-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: -webkit-fill-available;
+      padding: 0 20px;
+      .partners-visual-brand {
+        height: 74px;
+        img {
+          width: 75px;
         }
       }
+    }
+  }
 }
