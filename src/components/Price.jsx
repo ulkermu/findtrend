@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Switch from '@mui/material/Switch';
 
-const SwitchButton = () => {
+const Price = () => {
   const [toggled, setToggled] = useState(false);
   return (
     <div>
@@ -13,4 +13,4 @@ const SwitchButton = () => {
   );
 };
 
-export default SwitchButton;
+export default Price;
