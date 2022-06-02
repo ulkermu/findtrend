@@ -26,6 +26,7 @@ const AllConnect = () => {
         />
         <img className="allConnect-tweet" src={tweet3} alt="Elon Musk Tweet" />
       </div>
+      <button className="allConnect-view-more">View More Trend</button>
     </div>
   );
 };
